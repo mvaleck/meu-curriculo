@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="sections.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navWeb">
+            <i class="fa-solid fa-computer"> MValeck</i>
+            <ul class="menuWeb">
+                <li><button>Sobre Mim</button></li>
+                <li><button>Conhecimentos</button></li>
+                <li><button>Expêriencia</button></li>
+                <li><button>Contato</button></li>
+            </ul>
+            <button id="btNav"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+
+        <nav class="navMobile">
+            <ul class="menuMobile">
+                <li><button>Sobre Mim</button></li>
+                <li><button>Conhecimentos</button></li>
+                <li><button>Expêriencia</button></li>
+                <li><button>Contato</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="sobreMim">
+            <img src="foto.mi.jpeg" width="250px" alt="">
+
+            <div class="txt">
+                <h1>Sobre Mim</h1>
+                <p>
+                    Meu nome é Milena, tenho 21 anos e atualmente estou no sétimo semestre do curso de Sistemas de
+                    Informação na Faculdade Eniac, em Guarulhos (período noturno). Já atuo como estagiária na área de
+                    desenvolvimento e estou focada em me aprimorar cada vez mais na área de Tecnologia da Informação.
+                </p>
+
+                <p>
+                    Tenho grande interesse em desenvolvimento web, tanto no front-end quanto no back-end, e estou
+                    constantemente buscando aprender novas tecnologias. Também tenho afinidade com design e pretendo
+                    expandir meus conhecimentos nessa área. Meu próximo passo é aprofundar meus estudos em Java e me
+                    tornar uma profissional completa e preparada para os desafios do mercado.
+                </p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="slide">
+                <h2>Soft Skills</h2>
+                <div class="slider-container">
+                    <button class="prev" onclick="moveSlide('soft', -1)">&#10094;</button>
+                    <div class="slider" id="soft-slider">
+                        <div class="slide">Relacionamento interpessoal</div>
+                        <div class="slide">Trabalho em equipe</div>
+                        <div class="slide">Comunicação</div>
+                        <div class="slide">Empatia</div>
+                    </div>
+                    <button class="next" onclick="moveSlide('soft', 1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="slide1">
+                <h2>Hard Skills</h2>
+                <div class="slider-container">
+                    <button class="prev" onclick="moveSlide('hard', -1)">&#10094;</button>
+                    <div class="slider" id="hard-slider">
+                        <div class="slide">HTML</div>
+                        <div class="slide">CSS</div>
+                        <div class="slide">JavaScript</div>
+                        <div class="slide">Git/GitHub</div>
+                    </div>
+                    <button class="next" onclick="moveSlide('hard', 1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h1>Expêriencia Profissional</h1>
+            <div>
+                <h3>Itaú Unibanco (2022-2024)</h3>
+                <p>Trabalhei como Jovem Aprendiz no Banco Itáu, de Dezembro de 2022 à Fevereiro de 2024, no segmento
+                    Agências.
+                    Minhas atividades diárias consistiam em ajudar e auxilar os clientes nos caixas eletrônicos, na
+                    distribuição de senhas para cada atendimento, e outras tarefas administrativas internas.</p>
+                <p>Tive a oportunidade de interagir com clientes de diversas idades, com destaque para os idosos, o que
+                    me ajudou a desenvolver habilidades de comunicação e empatia. Eu recebia elogios constantes pela
+                    qualidade no atendimento ao cliente.</p>
+                <p>Essa experiência foi fundamental para meu crescimento pessoal e profissional, aprimorando minhas
+                    habilidades de atendimento e resolução de problemas.</p>
+            </div>
+
+            <div>
+                <h3>Dguests (2025)</h3>
+                <p>
+                    Desde março de 2025, atuo como estagiária de Desenvolvimento Web na empresa DGuests.
+                </p>
+
+                <p>
+                    No meu dia a dia, participo de projetos utilizando HTML, CSS e JavaScript, contribuindo ativamente para o desenvolvimento e melhoria de interfaces web. Essa experiência tem sido essencial para consolidar meus conhecimentos técnicos e adquirir vivência prática na área.
+                  </p>
+                
+                  <p>
+                    Estou em constante aprendizado, me aprimorando a cada dia com foco em boas práticas de desenvolvimento, usabilidade e design. Além disso, essa oportunidade tem fortalecido minha paixão por tecnologia e minha vontade de seguir evoluindo como desenvolvedora front-end.
+                  </p>
+            </div>
+
+        </section>
+
+
+        <section id="habilidades">
+            
+            <h1>Habilidades & Certificações</h1>
+
+            <div id="bloco">
+                <div class="txtBloco">
+                    <h4>Inglês</h4>
+                    <p>Conhecimento na Linguaguem</p>
+                </div>
+        
+                <div class="txtBloco">
+                    <h4>CPA-10</h4>
+                    <p>sssssssssssss</p>
+                </div>
+        
+                <div class="txtBloco">
+                    <h4>Jira Software</h4>
+                    <p>ssssssssssss</p>
+                </div>
+        
+                <div class="txtBloco">
+                    <h4>JavaScript</h4>
+                    <p> ssssssssssssssss</p>
+                </div>
+            </div>
+
+        </section>
+    
+        <p></p>
+
+
+
+
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
