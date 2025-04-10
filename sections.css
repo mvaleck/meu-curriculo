@@ -166,3 +166,35 @@ button.next {
   margin: 5px 0;
 }
 
+#contato {
+  padding: 230px;
+text-align: center;
+}
+
+#logos img {
+  width: 70px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+
+}
+
+footer {
+  padding: 30px;
+  background-color: #1f1d1f;
+  text-align: center;
+  font-size: 10px;
+}
+
+#sobre, #habilidades {
+  scroll-margin-top: 150px;
+}
+
+#experiencia, #contato{
+  scroll-margin-top: 70px;
+}
+
+

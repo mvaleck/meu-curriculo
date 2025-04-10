@@ -54,4 +54,34 @@ document.addEventListener('DOMContentLoaded', function () {
       slider.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
   });
+
+  //teste
+
+    document.querySelectorAll('.btSobre').forEach(botao => {
+      botao.addEventListener('click', function () {
+        document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    document.querySelectorAll('.btExpe').forEach(botao => {
+      botao.addEventListener('click', function(){
+        document.getElementById('experiencia').scrollIntoView({behavior: 'smooth'});
+      });
+    });
+
+    document.querySelectorAll('.btHab').forEach(botao => {
+      botao.addEventListener('click' , function () {
+        document.getElementById('habilidades').scrollIntoView({behavior: "smooth"})
+        
+      });
+    });
   
+    document.querySelectorAll('.btContato').forEach(botao => {
+      botao.addEventListener('click' , function () {
+        document.getElementById('contato').scrollIntoView({behavior: "smooth"})
+        
+      });
+    });
+
+
+

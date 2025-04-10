@@ -62,7 +62,7 @@ header {
 }
 
 .menuWeb button:hover{
-    color: blue;
+    color: rgb(223, 95, 255);
     cursor: pointer;
 
 }

@@ -16,27 +16,27 @@
         <nav class="navWeb">
             <i class="fa-solid fa-computer"> MValeck</i>
             <ul class="menuWeb">
-                <li><button>Sobre Mim</button></li>
-                <li><button>Conhecimentos</button></li>
-                <li><button>Expêriencia</button></li>
-                <li><button>Contato</button></li>
+                <li><button id="bt1" class="btSobre btMenu underline">Sobre Mim</button></li>
+                <li><button id="bt2" class="btExpe btMenu">Expêriencia</button></li>
+                <li><button id="bt3" class="btHab btMenu">Conhecimentos</button></li>
+                <li><button id="bt4" class="btContato btMenu">Contato</button></li>
             </ul>
             <button id="btNav"><i class="fa-solid fa-bars"></i></button>
         </nav>
 
         <nav class="navMobile">
             <ul class="menuMobile">
-                <li><button>Sobre Mim</button></li>
-                <li><button>Conhecimentos</button></li>
-                <li><button>Expêriencia</button></li>
-                <li><button>Contato</button></li>
+                <li><button id="bt2" class="btSobre">Sobre Mim</button></li>
+                <li><button class="btExpe">Expêriencia</button></li>
+                <li><button class="btHab">Conhecimentos</button></li>
+                <li><button class="btContato">Contato</button></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <section class="sobreMim">
+        <section id="sobre" class="sobreMim">
             <img src="foto.mi.jpeg" width="250px" alt="">
 
             <div class="txt">
@@ -147,17 +147,34 @@
 
         </section>
     
-        <p></p>
+        <section id="contato">
+            <h1>Contato</h1>
+            <p>
+                Gostou do meu trabalho? Baixe meu currículo clicando aqui! 
+            </p>
 
+            <p>
+                Fique à vontade para entrar em contato pelo e-mail: minivaleck@hotmail.com
+            <br>Ou, se preferir, me chame em alguma das redes sociais abaixo 
+            </p>
 
+            <div id="logos">
+            <a href="https://github.com/mvaleck" target="_blank"> <img src="github.png" alt="github"></a>
+            <a href="https://wa.me/11960627700" target="_blank"><img src="whatsapp.png" alt="whatsapp"></a>
+            <a href="https://www.linkedin.com/in/milena-valeck?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"> <img src="linkedin.png" alt="linkedin"></a>
+            </div>
 
-
-
+        </section>
 
     </main>
 
+    <footer>
+        <p>Milena Valeck. Todos os direitos resevrados</p>
+    </footer>
 
     <script src="script.js"></script>
+    <script src="menu-script.js"></script>
+
 </body>
 
 </html>
