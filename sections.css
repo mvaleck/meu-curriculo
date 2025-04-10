@@ -19,10 +19,12 @@ main {
   padding: 0px 100px 0px;
   justify-content: center;
   margin: 50px 50px;
+  margin-bottom: 90px;
 }
 
 .sobreMim p {
   padding: 10px;
+  font-size: 15px;
 }
 
 .txt {
