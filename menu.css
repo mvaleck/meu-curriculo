@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: #111111;
     font-family: "Poppins", sans-serif;
-    color:white;
-    
+    color: white;
+
 
 }
 
-i{
+i {
     color: #e7d6e6;
+    cursor: pointer;
 }
 
 header {
@@ -23,7 +25,8 @@ header {
     z-index: 2;
     position: fixed;
     background-color: #181818;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* sombra suave pra baixo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* sombra suave pra baixo */
 
 }
 
@@ -32,36 +35,36 @@ header {
     padding: 27px;
     justify-content: space-around;
     text-align: center;
-   
+
 }
 
 .menuWeb {
     display: flex;
     gap: 70px;
     list-style: none;
-    
-    
+
+
 }
 
-.menuWeb button{
+.menuWeb button {
     color: white;
     border-style: none;
     background: none;
     font-size: 20px;
     cursor: pointer;
-    transition: color 0.3s ease ;
+    transition: color 0.3s ease;
 }
 
-.navMobile{
+.navMobile {
     display: none;
     visibility: hidden;
 }
 
-#btNav{
+#btNav {
     display: none;
 }
 
-.menuWeb button:hover{
+.menuWeb button:hover {
     color: rgb(223, 95, 255);
     cursor: pointer;
 
@@ -69,17 +72,16 @@ header {
 
 
 
+@media screen and (max-width: 768px) {
+    .menuWeb {
+        display: none;
+    }
 
-@media  screen and (max-width: 768px){
-   .menuWeb {
-    display: none;
-   }
-
-   #btNav{
-    display: flex;
-    border: none;
-    background: transparent;
-    cursor: pointer;
+    #btNav {
+        display: flex;
+        border: none;
+        background: transparent;
+        cursor: pointer;
     }
 
     .navMobile {
@@ -90,19 +92,20 @@ header {
         visibility: hidden;
         transition: max-height 0.4s ease, visibility 0.3s ease;
         flex-direction: column;
-    
+
     }
 
     navMobile.ativo {
-        max-height: 300px; /* ou o que precisar pro seu menu */
+        max-height: 300px;
+        /* ou o que precisar pro seu menu */
         visibility: visible;
-      }
-    
-      /* Para girar o ícone */
-#btNav.ativo i {
-    transform: rotate(90deg);
-    transition: transform 0.3s ease;
-  }
+    }
+
+    /* Para girar o ícone */
+    #btNav.ativo i {
+        transform: rotate(90deg);
+        transition: transform 0.3s ease;
+    }
 
     .menuMobile {
         display: flex;
@@ -111,17 +114,15 @@ header {
         list-style: none;
         text-align: center;
         margin-bottom: 15px;
-        
+
     }
 
-    .menuMobile button{
+    .menuMobile button {
         border-style: none;
         background: none;
         font-size: 20px;
         color: white;
         cursor: pointer;
     }
-
-
 
 }
